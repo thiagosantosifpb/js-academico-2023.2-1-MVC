@@ -9,8 +9,9 @@
     <h1>Cadastro de Disciplinas</h1>
     Código:<input id="codigoDisciplina"><br>
     Nome:<input id="nomeDisciplina"><br>
-    <button onclick="controladorDisciplina.inserir()">Cadastrar Disciplina</button>
-    <button onclick="controladorDisciplina.inserirAlunoNaDisciplina()">Inserir Aluno na Disciplina</button>
+    <button onclick="disciplinacontrolador.inserir()">Cadastrar Disciplina</button>
+    <button onclick="disciplinacontrolador.inserirAlunoNaDisciplina()">Inserir Aluno na Disciplina</button>
+
 
     <h2>Disciplinas Cadastradas</h2>
     <ul id="listaDisciplinas"></ul>
@@ -19,8 +20,6 @@
     <script src="repositorio/disciplina_repositorio.js"></script>
     <script src="servico/disciplina_service.js"></script>
     <script src="controlador/disciplina_controlador.js"></script>
-    <script>
-        const controladorDisciplina = new DisciplinaControlador();
-    </script>
+    <script src="scriptDisciplina.js"></script>
 </body>
 </html>
